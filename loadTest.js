@@ -4,17 +4,17 @@
 var path = require('path'), // ensures that the path is consistent, regardless of where the script is run from
 
     async = require('async'), // https://npmjs.org/package/async
-    newman = require('../'), // change to require('newman'), if using outside this repository
+    newman = require('newman'),
 
     /**
-     * A set of collection run options for the paralle collection runs. For demonstrative purposes in this script, an
+     * A set of collection run options for the parallel collection runs. For demonstrative purposes in this script, an
      * identical set of options has been used. However, different options can be used, so as to actually run different
      * collections, with their corresponding run options in parallel.
      *
      * @type {Object}
      */
     options = {
-        collection: path.join(__dirname, 'sample-collection.json')
+        collection: path.join(__dirname, 'ExampleEchoRequestMethodsCollection.json')
     },
 
     /**
