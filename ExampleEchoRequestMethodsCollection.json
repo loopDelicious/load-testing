@@ -14,17 +14,23 @@
 						{
 							"listen": "test",
 							"script": {
-								"type": "text/javascript",
+								"id": "daf25a96-94f8-4ca9-baa4-09a8439b6c49",
 								"exec": [
 									"pm.test(\"response is ok\", function () {",
 									"    pm.response.to.have.status(200);",
 									"});",
 									"",
+									"pm.test(\"Response time is less than 500ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(500);",
+									"});",
+									"",
 									"pm.test(\"response body has json with request queries\", function () {",
 									"    pm.response.to.have.jsonBody('args.foo1', 'bar1')",
 									"        .and.have.jsonBody('args.foo2', 'bar2');",
-									"});"
-								]
+									"});",
+									""
+								],
+								"type": "text/javascript"
 							}
 						}
 					],
@@ -66,17 +72,22 @@
 						{
 							"listen": "test",
 							"script": {
-								"type": "text/javascript",
+								"id": "0632ba47-9f0f-4994-81a3-7eda72433d82",
 								"exec": [
 									"pm.test(\"response is ok\", function () {",
 									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 500ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(500);",
 									"});",
 									"",
 									"pm.test(\"response body has json with request body\", function () {",
 									"    pm.response.to.have.jsonBody('data', ",
 									"        'This is expected to be sent back as part of response body.');",
 									"});"
-								]
+								],
+								"type": "text/javascript"
 							}
 						}
 					],
@@ -108,17 +119,22 @@
 						{
 							"listen": "test",
 							"script": {
-								"type": "text/javascript",
+								"id": "489297fd-99ec-416c-bef2-6664975b2f6c",
 								"exec": [
 									"pm.test(\"response is ok\", function () {",
 									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 500ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(500);",
 									"});",
 									"",
 									"pm.test(\"response body has json with form data\", function () {",
 									"    pm.response.to.have.jsonBody('form.foo1', 'bar1')",
 									"        .and.have.jsonBody('form.foo2', 'bar2');",
 									"});"
-								]
+								],
+								"type": "text/javascript"
 							}
 						}
 					],
@@ -161,17 +177,22 @@
 						{
 							"listen": "test",
 							"script": {
-								"type": "text/javascript",
+								"id": "97a1e98e-5988-46c6-9363-9d13e38a0ca0",
 								"exec": [
 									"pm.test(\"response is ok\", function () {",
 									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 500ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(500);",
 									"});",
 									"",
 									"pm.test(\"response body has json with form data\", function () {",
 									"    pm.response.to.have.jsonBody('data', ",
 									"        'This is expected to be sent back as part of response body.');",
 									"});"
-								]
+								],
+								"type": "text/javascript"
 							}
 						}
 					],
@@ -203,17 +224,22 @@
 						{
 							"listen": "test",
 							"script": {
-								"type": "text/javascript",
+								"id": "2b2a1678-89ae-4d1f-b5c2-9ccc85c1bafe",
 								"exec": [
 									"pm.test(\"response is ok\", function () {",
 									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 500ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(500);",
 									"});",
 									"",
 									"pm.test(\"response body has json with form data\", function () {",
 									"    pm.response.to.have.jsonBody('data', ",
 									"        'This is expected to be sent back as part of response body.');",
 									"});"
-								]
+								],
+								"type": "text/javascript"
 							}
 						}
 					],
@@ -245,17 +271,22 @@
 						{
 							"listen": "test",
 							"script": {
-								"type": "text/javascript",
+								"id": "51278f2c-4c2e-407a-bbd9-57f4ce3e8e75",
 								"exec": [
 									"pm.test(\"response is ok\", function () {",
 									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 500ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(500);",
 									"});",
 									"",
 									"pm.test(\"response body has json with form data\", function () {",
 									"    pm.response.to.have.jsonBody('data', ",
 									"        'This is expected to be sent back as part of response body.');",
 									"});"
-								]
+								],
+								"type": "text/javascript"
 							}
 						}
 					],
