@@ -6,7 +6,7 @@ var path = require('path'),
     newman = require('newman'),
     // options for the parallel collection runs
     options = {
-        collection: path.join(__dirname, 'ExampleEchoRequestMethodsCollection.json')
+        collection: path.join(__dirname, './ExampleEchoRequestMethodsCollection.json')
     },
     // callback function that marks the end of the current collection run, when called
     parallelCollectionRun = function (done) {

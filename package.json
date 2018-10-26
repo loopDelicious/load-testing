@@ -11,7 +11,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "zip": "zip -r function.zip package.json loadTest.js ExampleEchoRequestMethodsCollection.json node_modules/"
+    "zip": "zip -r function.zip package.json index.js ExampleEchoRequestMethodsCollection.json node_modules/"
   },
   "repository": {
     "type": "git",
